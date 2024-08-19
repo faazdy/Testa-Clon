@@ -291,6 +291,17 @@ footer .devFooter a {
   header nav .responsive-menu {
     display: block !important;
   }
+  .s-hero1 .text,
+  .s-hero2 .text,
+  .s-hero3 .text,
+  .s-hero4 .text,
+  .s-hero5 .text,
+  .s-hero6 .text,
+  .s-hero7 .text,
+  .s-hero8 .text,
+  .s-hero9 .text {
+    margin-top: 3em;
+  }
   .s-hero1 .text img,
   .s-hero2 .text img,
   .s-hero3 .text img,
