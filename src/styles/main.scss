@@ -20,7 +20,6 @@ body{
     background-color: black;
     color: $color2;
     position: relative;
-    
     header nav{
         position: absolute;
         width: 100%;
@@ -32,8 +31,15 @@ body{
         .tags a{
             color: $color2;
             margin-right: 1em;
-            font-size: 15px;
+            font-size: 13px;
+            font-weight: 600;
             text-decoration: none;
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            img{max-width: 23px;}
         }
     }
 
@@ -79,6 +85,7 @@ body{
                 border-radius: 5px;
                 font-weight: 600;
                 color: $color1;
+                cursor: pointer;
             }
             .orderbtn{
                 background-color: $btn1;
@@ -116,5 +123,16 @@ footer{
         font-size: 11px;
         width: 50%;
         margin: 1em auto;
+        color: $btn3color;
+    }
+    .teslaFooter{
+        font-size: 11px;
+        a{color: $btn3color; text-decoration: none; margin-right: 10px; font-weight: bold;}
+        margin: 1em 0;
+    }
+    .devFooter{
+        margin: 1em 0;
+        color: $btn3color;
+        a{text-decoration: none;}
     }
 }
