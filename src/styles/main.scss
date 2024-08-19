@@ -21,6 +21,7 @@ body{
     color: $color2;
     position: relative;
     header nav{
+        transition: .3s background;
         position: absolute;
         width: 100%;
         display: flex;
@@ -50,13 +51,15 @@ body{
             border-radius: 5px;
         }
         .menu-burger{
-            transform: translateY(-50000px);
+            overflow: auto;
+            transform: translateX(-5000px);
+            transition: .3s all;
             position: absolute;
             background-color: rgba(255, 255, 255, 0.822);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
             right: 0; left: 0;
-            height: 100vh;
+            height: 90vh;
             font-size: 25px;
             cursor: pointer;
             ul{
@@ -178,7 +181,12 @@ footer{
 }
 
 @media screen and (max-width: 1100px) {
+    header{
+        position: sticky;
+        top: 0;
+    }
     header nav{
+        background-color: rgba(80, 80, 80, 0.158);
         .tags{
             display: none;
         }
@@ -196,6 +204,20 @@ footer{
     .s-hero7, 
     .s-hero8, 
     .s-hero9{
+        .text{
+            img{width: 300px;}
+            h1{
+                font-size: 45px;
+                font-weight: 500;
+            }
+            h2{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
         .btns{
             .orderbtn, .demo, .learn{
                 width: 150px;
