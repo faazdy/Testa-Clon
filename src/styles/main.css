@@ -29,13 +29,57 @@ body header nav .tags a {
   font-weight: 600;
   text-decoration: none;
 }
-body header nav .user {
+body header nav .user, body header nav .user-burger {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-body header nav .user img {
+body header nav .user img, body header nav .user-burger img {
   max-width: 23px;
+}
+body header nav .responsive-menu,
+body header nav #menu-toggle {
+  display: none;
+}
+body header nav label {
+  display: inline-block;
+  background-color: rgba(39, 39, 39, 0.1725490196);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+body header nav .menu-burger {
+  transform: translateY(-50000px);
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.822);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  right: 0;
+  left: 0;
+  height: 100vh;
+  font-size: 25px;
+  cursor: pointer;
+}
+body header nav .menu-burger ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body header nav .menu-burger ul li {
+  list-style: none;
+  padding: 1em;
+}
+body header nav .menu-burger ul li a {
+  color: #111111;
+  text-decoration: none;
+}
+body header nav .menu-burger ul li:hover {
+  background-color: gray;
+}
+body header nav .menu-burger .user-burger {
+  background-color: #747474;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .s-hero1,
 body .s-hero2,
@@ -182,6 +226,7 @@ body .s-hero5 .btns .orderbtn, body .s-hero5 .btns .learn {
 }
 body .s-hero5 .btns .orderbtn:hover, body .s-hero5 .btns .learn:hover {
   background-color: #111111;
+  transition: 0.3s all;
 }
 body .s-hero6 {
   background-image: url("../imgs/Homepage-SolarPanels-01-Desktop.avif");
@@ -222,6 +267,45 @@ footer .devFooter {
 }
 footer .devFooter a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+  header nav .tags {
+    display: none;
+  }
+  header nav .user {
+    display: none !important;
+  }
+  header nav .responsive-menu {
+    display: block !important;
+  }
+  .s-hero1 .btns .orderbtn, .s-hero1 .btns .demo, .s-hero1 .btns .learn,
+  .s-hero2 .btns .orderbtn,
+  .s-hero2 .btns .demo,
+  .s-hero2 .btns .learn,
+  .s-hero3 .btns .orderbtn,
+  .s-hero3 .btns .demo,
+  .s-hero3 .btns .learn,
+  .s-hero4 .btns .orderbtn,
+  .s-hero4 .btns .demo,
+  .s-hero4 .btns .learn,
+  .s-hero5 .btns .orderbtn,
+  .s-hero5 .btns .demo,
+  .s-hero5 .btns .learn,
+  .s-hero6 .btns .orderbtn,
+  .s-hero6 .btns .demo,
+  .s-hero6 .btns .learn,
+  .s-hero7 .btns .orderbtn,
+  .s-hero7 .btns .demo,
+  .s-hero7 .btns .learn,
+  .s-hero8 .btns .orderbtn,
+  .s-hero8 .btns .demo,
+  .s-hero8 .btns .learn,
+  .s-hero9 .btns .orderbtn,
+  .s-hero9 .btns .demo,
+  .s-hero9 .btns .learn {
+    width: 150px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
