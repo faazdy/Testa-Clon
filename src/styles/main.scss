@@ -187,6 +187,8 @@ footer{
     }
     header nav{
         background-color: rgba(80, 80, 80, 0.158);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
         .tags{
             display: none;
         }
